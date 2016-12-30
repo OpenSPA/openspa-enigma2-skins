@@ -1,2 +1,2 @@
-# Spa24HD
-Skin Spa24HD released by OpenSPA Team
+# OpenSPA_skins
+Skins released by OpenSPA Team
