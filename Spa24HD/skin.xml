@@ -241,15 +241,15 @@
     <eLabel name="" position="628,82" size="300,137" zPosition="2" backgroundColor="colorJR11" />
   </screen>
   <screen name="BOTONES_RGYB">
-    <ePixmap pixmap="Spa24HD/buttons/key_red.png" position="343,669" size="30,30" alphatest="blend" />
-    <ePixmap pixmap="Spa24HD/buttons/key_green.png" position="552,669" size="30,30" alphatest="blend" />
-    <ePixmap pixmap="Spa24HD/buttons/key_yellow.png" position="746,669" size="30,30" alphatest="blend" />
-    <ePixmap pixmap="Spa24HD/buttons/key_blue.png" position="1018,669" size="30,30" alphatest="blend" />
-    <eLabel name="" position="326,665" size="953,55" zPosition="-1" backgroundColor="un444444" />
-    <widget name="key_red" position="374,671" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
-    <widget name="key_green" position="581,671" size="150,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
-    <widget name="key_yellow" position="779,672" size="225,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
-    <widget name="key_blue" position="1048,671" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
+    <ePixmap pixmap="Spa24HD/buttons/key_red.png" position="293,669" size="30,30" alphatest="blend" />
+    <ePixmap pixmap="Spa24HD/buttons/key_green.png" position="502,669" size="30,30" alphatest="blend" />
+    <ePixmap pixmap="Spa24HD/buttons/key_yellow.png" position="696,669" size="30,30" alphatest="blend" />
+    <ePixmap pixmap="Spa24HD/buttons/key_blue.png" position="968,669" size="30,30" alphatest="blend" />
+    <eLabel name="" position="276,665" size="1003,55" zPosition="-1" backgroundColor="un444444" />
+    <widget name="key_red" position="324,671" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
+    <widget name="key_green" position="531,671" size="150,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
+    <widget name="key_yellow" position="729,672" size="225,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
+    <widget name="key_blue" position="998,671" size="250,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="colorJR3" transparent="1" foregroundColor="white" />
   </screen>
   <screen name="BOTONES_SOURCE_RGYB">
     <ePixmap pixmap="Spa24HD/buttons/key_red.png" position="348,669" size="30,30" alphatest="blend" />
@@ -529,28 +529,28 @@
     <eLabel name="" position="794,72" size="486,588" zPosition="-4" backgroundColor="colorJR10" />
     <eLabel name="" position="794,308" size="486,351" zPosition="-3" backgroundColor="colorJR13" />
     <eLabel text="Channel selection" position="46,25" size="590,46" font="Regular; 35" transparent="1" valign="top" zPosition="1" backgroundColor="colorJR15" foregroundColor="white" />
-    <widget source="Title" render="Label" position="43,76" size="478,44" font="SetrixHD; 29" backgroundColor="colorJR4" transparent="1" noWrap="1" />
+    <widget source="Title" render="Label" position="43,76" size="478,44" font="Regular; 29" backgroundColor="colorJR4" transparent="1" noWrap="1" />
     <eLabel position="222,195" size="318,0" backgroundColor="colorJR1" foregroundColor="colorJR1" />
     <widget name="list" position="43,130" size="479,489" scrollbarMode="showNever" colorServiceDescription="colorJR1" colorServiceDescriptionSelected="colorJR4" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="colorJR4" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" transparent="1" foregroundColor="black" backgroundColor="colorJR4" itemHeight="30" zPosition="1" />
-    <widget source="ServiceEvent" render="Label" position="801,79" size="444,36" font="SetrixHD; 24" backgroundColor="colorJR10" transparent="1" valign="bottom" noWrap="1" halign="center" foregroundColor="white">
+    <widget source="ServiceEvent" render="Label" position="801,79" size="444,36" font="Regular; 24" foregroundColor="white" backgroundColor="colorJR10"  transparent="1" valign="bottom" noWrap="1" halign="center" >
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="800,281" size="64,24" font="SetrixHD; 21" backgroundColor="colorJR10" transparent="1" halign="left" foregroundColor="white">
+    <widget source="ServiceEvent" render="Label" position="800,281" size="64,24" font="Regular; 21" backgroundColor="colorJR10" transparent="1" halign="left" foregroundColor="white">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
     <widget name="list2" valign="bottom" position="800,315" size="444,336" font="Regular;18" backgroundColor="colorJR13" foregroundColor="colorJR4" transparent="1" posDuration="152" posEvent="180" posyevent="0" itemHeight="28" sizey="35" fontBegin="Regular;19" fontEvent="Regular;20" fontDate="Regular;21" fontDuration="Regular;19" />
-    <widget source="ServiceEvent" render="Label" position="1169,281" size="76,24" font="SetrixHD; 21" backgroundColor="colorJR10" transparent="1" halign="right" foregroundColor="white">
+    <widget source="ServiceEvent" render="Label" position="1169,281" size="76,24" font="Regular; 21" backgroundColor="colorJR10" transparent="1" halign="right" foregroundColor="white">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
     <widget source="ServiceEvent" render="Progress" position="866,293" size="300,4" borderWidth="0" backgroundColor="selection-background" pixmap="MetrixJRSD/colors/00ffffff.png" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=5,always=0,startdelay=3000,wrap" position="800,123" size="445,160" font="Regular; 18" backgroundColor="colorJR10" transparent="1" valign="top">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=5,always=0,startdelay=3000,wrap" position="800,123" size="445,160" font="Regular; 18" foregroundColor="white" backgroundColor="colorJR10" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="icanal" position="42,626" size="480,26" font="Regular; 15" halign="center" foregroundColor="grey" transparent="1" zPosition="8" backgroundColor="colorJR4" valign="center" />
+    <widget name="icanal" position="42,616" size="480,36" font="Regular; 15" halign="center" foregroundColor="grey" transparent="1" zPosition="8" backgroundColor="colorJR4" valign="center" />
     <!-- MENU-TOP -->
     <widget source="global.CurrentTime" render="Label" position="1117,23" size="126,51" font="Regular; 42" backgroundColor="colorJR15" transparent="1" zPosition="3" halign="center" foregroundColor="white">
       <convert type="ClockToText">Default</convert>
@@ -1258,7 +1258,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ARRIBA" />
     <panel name="GRANDE" />
     <widget name="text" position="73,552" size="730,90" font="Regular;22" halign="right" transparent="1" backgroundColor="white" valign="bottom" />
-    <widget name="list" position="62,131" size="755,409" font="Regular;20" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="colorJR4" foregroundColor="black" transparent="1" />
+    <widget name="list" position="62,131" size="755,490" font="Regular;20" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="colorJR4" foregroundColor="black" transparent="1" />
   </screen>
   <screen name="UpdatePluginMenu" position="0,0" size="1280,720" title="Softwaremanager..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ARRIBA" />
@@ -2669,15 +2669,15 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
     <widget name="barrascroll_arr" position="0,0" zPosition="19" size="20,20" alphatest="blend" transparent="1" />
     <widget name="barrascroll_abj" position="0,0" zPosition="19" size="20,20" alphatest="blend" transparent="1" />
   </screen>
-  <screen position="0,0" size="1280,720" title="Information" name="infoAzTexto" flags="wfNoBorder" backgroundColor="transparent">
+    <screen position="0,0" size="1280,720" title="Information" name="infoAzTexto" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ARRIBA" />
     <widget name="lista" position="33,86" size="250,602" scrollbarMode="showOnDemand" zPosition="12" transparent="1" backgroundColor="colorJR14" />
     <widget name="textoinfo" position="301,116" size="782,522" valign="top" halign="left" text="openSPA, Wait..." font="Regular; 18" zPosition="1" backgroundColor="colorJR12" />
     <widget name="listainfo" position="301,116" size="782,522" zPosition="1" scrollbarMode="showAlways" transparent="1" backgroundColor="colorJR12" />
     <widget name="listaproc" position="301,116" size="782,522" zPosition="1" scrollbarMode="showAlways" transparent="1" backgroundColor="colorJR12" />
-    <widget name="key_izq" position="324,651" size="220,24" valign="center" halign="left" zPosition="4" font="Regular;17" transparent="1" />
+    <widget name="key_izq" position="324,651" size="102,24" valign="center" halign="left" zPosition="4" font="Regular;17" transparent="1" backgroundColor="colorJR12" />
     <widget name="img_izq" position="290,650" zPosition="2" size="34,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/InfoAz/res/izq-fs8.png" transparent="1" alphatest="blend" />
-    <widget name="key_dch" position="458,651" size="220,24" valign="center" halign="left" zPosition="4" font="Regular;17" transparent="1" />
+    <widget name="key_dch" position="458,651" size="95,24" valign="center" halign="left" zPosition="4" font="Regular;17" transparent="1" backgroundColor="colorJR12" />
     <widget name="img_dch" position="423,650" zPosition="2" size="34,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/InfoAz/res/dch-fs8.png" transparent="1" alphatest="blend" />
     <widget name="key_red" position="583,645" size="120,40" valign="center" halign="left" backgroundColor="colorJR12" zPosition="4" font="Regular;17" transparent="1" />
     <widget name="key_green" position="709,645" size="120,40" valign="center" halign="left" backgroundColor="colorJR12" zPosition="4" font="Regular;17" transparent="1" />
@@ -2702,7 +2702,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
     <widget itemHeight="25" name="config" font="Regular;18" position="109,99" scrollbarMode="showOnDemand" size="508,234" zPosition="3" backgroundColor="colorJR4" transparent="1" />
     <ePixmap alphatest="on" name="linea" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/spzCAMD/images/barra.png" position="101,345" size="526,6" transparent="1" zPosition="2" />
     <widget alphatest="on" name="check" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/spzCAMD/images/checkok.png" position="1127,113" size="24,24" transparent="1" zPosition="2" />
-    <widget font="Regular;18" halign="left" name="info" position="99,364" size="530,271" transparent="1" valign="center" zPosition="4" />
+    <widget font="Regular;18" halign="left" name="info" position="99,364" size="530,271" transparent="1" valign="center" zPosition="4" backgroundColor="colorJR4"/>
   </screen>
   <screen name="spzZapHistoryMenu" position="0,0" size="1280,720" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="ARRIBA" />
@@ -3340,8 +3340,8 @@ self.setTitle(_("Help"))
     <panel name="GRANDE" />
     <panel name="BOTONES_RGYB" />
     <widget name="menu" font="Regular;18" position="58,126" scrollbarMode="showOnDemand" size="765,383" transparent="1" />
-    <widget name="texto" position="62,575" size="753,60" font="Regular;22" valign="center" transparent="1" halign="center" backgroundColor="colorJR3" />
-    <widget name="space" position="62,518" size="753,30" halign="center" font="Regular;20" transparent="1" foregroundColor="green" backgroundColor="colorJR3" />
+    <widget name="texto" position="62,575" size="753,60" font="Regular;22" valign="center" transparent="1" halign="center" backgroundColor="colorJR4" />
+    <widget name="space" position="62,518" size="753,30" halign="center" font="Regular;20" transparent="1" foregroundColor="green" backgroundColor="colorJR4" />
     <widget name="progreso" position="62,554" size="753,12" borderWidth="1" zPosition="3" foregroundColor="green" />
   </screen>
   <screen name="spzCopiar" position="0,0" size="1280,720" title="openSPA Backup" zPosition="11" backgroundColor="transparent" flags="wfNoBorder">
@@ -3375,81 +3375,81 @@ self.setTitle(_("Help"))
     <panel name="MEDIO" />
     <panel name="BOTONES_SOURCE_RGYB" />
     <widget name="menu" font="Regular;18" position="98,97" size="540,453" scrollbarMode="showOnDemand" zPosition="5" transparent="1" />
-    <widget source="statusbar" render="Label" position="113,573" zPosition="10" size="510,50" halign="center" valign="center" font="Regular;18" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+    <widget source="statusbar" render="Label" position="113,573" zPosition="10" size="510,50" halign="center" valign="center" font="Regular;18" transparent="1" shadowOffset="-1,-1" />
   </screen>
   <screen name="spaEPGSelection" position="0,0" size="1280,720" backgroundColor="transparent" title="EPG" flags="wfNoBorder">
-    <panel name="ARRIBA" />
-    <panel name="BOTONES_GYB" />
-    <eLabel position="56,111" zPosition="-2" size="769,550" backgroundColor="colorJR4" />
-    <widget source="Title" render="Label" position="37,25" size="505,36" font="Regular; 28" transparent="1" valign="center" zPosition="2" backgroundColor="colorJR15" halign="center" foregroundColor="white" />
-    <eLabel name="" position="56,651" size="1137,10" backgroundColor="colorJR15" />
-    <eLabel name="" position="863,471" size="330,180" backgroundColor="colorJR15" />
-    <widget source="session.VideoPicture" render="Pig" position="868,476" size="320,180" zPosition="50" backgroundColor="transparent" />
-    <eLabel name="" position="56,111" size="1115,10" zPosition="1" backgroundColor="colorJR19" />
-    <eLabel name="" position="863,121" size="308,299" backgroundColor="colorJR19" />
-    <ePixmap name="" position="0,0" size="1280,720" zPosition="-5" pixmap="Spa24HD/cf/fondo5.png" />
-    <eLabel name="" position="866,116" size="300,299" zPosition="2" backgroundColor="colorJR11" />
-    <ePixmap name="" position="0, 0" size="1280,720" zPosition="-5" pixmap="Spa24HD/cf/fondo5.png" />
-    <widget source="session.RecordState" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/openSPATVGuide/img/rec.png" position="1117,132" size="20,20" zPosition="3" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget name="list" position="59,128" size="762,340" scrollbarMode="showNever" transparent="0" foregroundColor="black" backgroundColor="colorJR12" backgroundColorSelected="colorJR2" foregroundColorSelected="colorJR4" posyBegin="2" posDuration="145" posyDuration="1" posEvent="165" posyEvent="1" sizey="28" fontBegin="Regular;19" fontEvent="Regular;20" fontDate="Regular;21" fontDuration="Regular;19" itemHeight="28" />
-    <widget source="Event" render="Label" position="70,484" size="100,24" font="Regular; 19" foregroundColor="colorJR9" backgroundColor="colorJR12" shadowColor="#000000" halign="left" transparent="1">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText" />
-    </widget>
-    <widget source="Event" render="Label" position="140,483" size="100,24" font="Regular; 19" foregroundColor="colorJR9" backgroundColor="colorJR12" shadowColor="#000000" halign="left" transparent="1">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="232,485" size="476,24" font="Regular; 18" foregroundColor="colorJR13" backgroundColor="colorJR12" transparent="1" halign="left" noWrap="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <!--<widget source="Event" render="Label" position="1113,459" size="112,24" font="Regular; 19" foregroundColor="#00ffffff" backgroundColor="#31000000" shadowColor="#000000" halign="center" transparent="1" text="1440 min">
+  <panel name="ARRIBA" />
+  <panel name="BOTONES_GYB" />
+  <eLabel position="56,111" zPosition="-2" size="769,550" backgroundColor="colorJR4" />
+  <widget source="Title" render="Label" position="37,25" size="505,36" font="Regular; 28" transparent="1" valign="center" zPosition="2" backgroundColor="colorJR15" halign="center" foregroundColor="white" />
+  <eLabel name="" position="56,651" size="1137,10" backgroundColor="colorJR15" />
+  <eLabel name="" position="863,471" size="330,180" backgroundColor="colorJR15" />
+  <widget source="session.VideoPicture" render="Pig" position="868,476" size="320,180" zPosition="50" backgroundColor="transparent" />
+  <eLabel name="" position="56,111" size="1165,10" zPosition="1" backgroundColor="colorJR19" />
+  <eLabel name="" position="863,121" size="358,299" backgroundColor="colorJR19" />
+  <ePixmap name="" position="0,0" size="1280,720" zPosition="-5" pixmap="Spa24HD/cf/fondo5.png" />
+  <eLabel name="" position="867,116" size="350,299" zPosition="2" backgroundColor="colorJR11" />
+  <ePixmap name="" position="0, 0" size="1280,720" zPosition="-5" pixmap="Spa24HD/cf/fondo5.png" />
+  <widget source="session.RecordState" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/openSPATVGuide/img/rec.png" position="1117,132" size="20,20" zPosition="3" alphatest="blend">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget name="list" position="59,128" size="762,340" scrollbarMode="showNever" transparent="0" colorEvent="black" backgroundColor="colorJR12" backgroundColorSelected="colorJR2" foregroundColorSelected="colorJR4" posyBegin="2" posDuration="145" posyDuration="1" posEvent="165" posyEvent="1" sizey="28" fontBegin="Regular;19" fontEvent="Regular;20" fontDate="Regular;21" fontDuration="Regular;19" itemHeight="28" />
+  <widget source="Event" render="Label" position="70,484" size="100,24" font="Regular; 19" foregroundColor="colorJR9" backgroundColor="colorJR12" halign="left" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText" />
+  </widget>
+  <widget source="Event" render="Label" position="140,483" size="100,24" font="Regular; 19" foregroundColor="colorJR9" backgroundColor="colorJR12" halign="left" transparent="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="232,485" size="476,24" font="Regular; 18" foregroundColor="colorJR13" backgroundColor="colorJR12" transparent="1" halign="left" noWrap="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <!--<widget source="Event" render="Label" position="1113,459" size="112,24" font="Regular; 19" foregroundColor="#00ffffff" backgroundColor="#31000000" shadowColor="#000000" halign="center" transparent="1" text="1440 min">
  					<convert type="EventTime">Duration</convert>
  					<convert type="ClockToText">InMinutes</convert>
  				</widget>-->
-    <widget source="Event" render="Label" position="61,525" zPosition="1" size="756,116" font="Regular; 18" backgroundColor="un31000000" shadowColor="#000000" transparent="1" valign="top">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
-    <!--<eLabel position="366,194" size="866,506" backgroundColor="#101b22" zPosition="-1" transparent="0" />-->
-    <widget source="session.CurrentService" render="Label" position="562,29" size="705,30" font="Regular; 19" transparent="1" valign="center" zPosition="6" backgroundColor="white" foregroundColor="dark" noWrap="1">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <!--<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/openSPATVGuide/img/key_id.png" position="1102,668" size="48,24" alphatest="blend" />-->
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/imgvk/izq.png" position="888,278" size="34,24" alphatest="blend" zPosition="4" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/imgvk/dcha.png" position="935,279" size="34,24" alphatest="blend" zPosition="4" />
-    <widget name="key_rw" position="995,279" size="40,24" font="Regular; 17" foregroundColor="white" backgroundColor="black" shadowColor="#000000" halign="left" valign="center" transparent="1" noWrap="1" zPosition="4" />
-    <eLabel name="smenos1" position="978,299" size="8,2" transparent="0" backgroundColor="colorJR4" zPosition="21" />
-    <eLabel name="smas1" position="975,280" size="16,16" text="+" transparent="1" foregroundColor="white" zPosition="21" halign="left" font="Regular; 17" valign="center" />
-    <widget name="img_picon" position="889,316" size="146,88" zPosition="10" transparent="1" />
-    <!--<widget name="barrapix" position="1194,208" zPosition="19" size="24,450" alphatest="blend" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/openSPATVGuide/img/scrollepgfs8.png" />-->
-    <widget name="sitimer" position="1113,377" size="24,24" zPosition="25" alphatest="blend" backgroundColor="colorJR11" />
-    <widget source="Event" render="Label" position="1103,347" size="46,24" font="Regular; 17" transparent="1" halign="center" noWrap="1" zPosition="20" backgroundColor="colorJR11">
-      <convert type="EventRating">Rating</convert>
-    </widget>
-    <widget name="genero" position="1039,317" size="111,24" zPosition="16" transparent="1" backgroundColor="colorJR11" font="Regular; 17" halign="center" valign="center" noWrap="1" />
-    <widget name="img_gen" position="1049,356" size="40,40" zPosition="10" transparent="1" alphatest="blend" backgroundColor="colorJR11" />
-    <!--<widget name="genero_arr" position="1000,46" size="240,2" zPosition="20" transparent="0" backgroundColor="#030813" />-->
-    <eLabel name="" position="1041,276" size="93,30" zPosition="4" transparent="1" text="INFO" font="Regular; 26" foregroundColor="colorJR3" backgroundColor="colorJR4" halign="center" />
-    <widget name="mes" position="956,126" size="120,26" transparent="1" backgroundColor="colorJR2" font="Regular; 20" halign="center" zPosition="4" />
-    <widget name="dia" position="986,182" size="60,53" transparent="1" backgroundColor="unececec" font="Regular; 46" foregroundColor="colorJR2" zPosition="4" />
-    <widget name="semana1" position="962,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
-    <widget name="semana2" position="978,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
-    <widget name="semana3" position="994,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
-    <widget name="semana4" position="1010,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
-    <widget name="semana5" position="1026,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
-    <widget name="semana6" position="1042,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
-    <widget name="semana7" position="1058,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
-    <widget name="fsemana1" position="962,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
-    <widget name="fsemana2" position="978,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
-    <widget name="fsemana3" position="994,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
-    <widget name="fsemana4" position="1010,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
-    <widget name="fsemana5" position="1026,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
-    <widget name="fsemana6" position="1042,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
-    <widget name="fsemana7" position="1058,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
-    <eLabel name="" position="956,153" size="120,106" backgroundColor="white" zPosition="3" />
-    <eLabel name="" position="956,126" size="120,26" backgroundColor="colorJR2" zPosition="3" />
+  <widget source="Event" render="Label" position="61,525" zPosition="1" size="756,116" font="Regular; 18" backgroundColor="colorJR4" transparent="1" valign="top">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <!--<eLabel position="366,194" size="866,506" backgroundColor="#101b22" zPosition="-1" transparent="0" />-->
+  <widget source="session.CurrentService" render="Label" position="562,29" size="705,30" font="Regular; 19" transparent="1" valign="center" zPosition="6" backgroundColor="white" foregroundColor="dark" noWrap="1">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <!--<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/openSPATVGuide/img/key_id.png" position="1102,668" size="48,24" alphatest="blend" />-->
+  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/imgvk/izq.png" position="888,278" size="34,24" alphatest="blend" zPosition="4" />
+  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/imgvk/dcha.png" position="935,279" size="34,24" alphatest="blend" zPosition="4" />
+  <widget name="key_rw" position="995,279" size="40,24" font="Regular; 17" backgroundColor="colorJR11" halign="left" valign="center" transparent="1" noWrap="1" zPosition="4" />
+  <eLabel name="smenos1" position="978,296" size="8,2" transparent="0" backgroundColor="black" zPosition="21" text="-" />
+  <eLabel name="smas1" position="975,280" size="16,16" text="+" transparent="1" zPosition="21" halign="left" font="Regular; 17" valign="center" backgroundColor="colorJR11" />
+  <widget name="img_picon" position="889,316" size="146,88" zPosition="10" transparent="1" />
+  <!--<widget name="barrapix" position="1194,208" zPosition="19" size="24,450" alphatest="blend" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/openSPATVGuide/img/scrollepgfs8.png" />-->
+  <widget name="sitimer" position="1133,377" size="24,24" zPosition="25" alphatest="blend" backgroundColor="colorJR11" />
+  <widget source="Event" render="Label" position="1123,347" size="46,24" font="Regular; 17" transparent="1" halign="center" noWrap="1" zPosition="20" backgroundColor="colorJR11">
+    <convert type="EventRating">Rating</convert>
+  </widget>
+  <widget name="genero" position="1039,317" size="161,24" zPosition="16" transparent="1" backgroundColor="colorJR11" font="Regular; 17" halign="center" valign="center" noWrap="1" />
+  <widget name="img_gen" position="1049,356" size="40,40" zPosition="10" transparent="1" alphatest="blend" backgroundColor="colorJR11" />
+  <!--<widget name="genero_arr" position="1000,46" size="240,2" zPosition="20" transparent="0" backgroundColor="#030813" />-->
+  <eLabel name="" position="1061,276" size="93,30" zPosition="4" transparent="1" text="INFO" font="Regular; 26" foregroundColor="colorJR3" backgroundColor="colorJR4" halign="center" />
+  <widget name="mes" position="956,126" size="120,26" transparent="1" backgroundColor="colorJR2" font="Regular; 20" halign="center" zPosition="4" />
+  <widget name="dia" position="986,182" size="60,53" transparent="1" backgroundColor="unececec" font="Regular; 46" foregroundColor="colorJR2" zPosition="4" />
+  <widget name="semana1" position="962,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
+  <widget name="semana2" position="978,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
+  <widget name="semana3" position="994,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
+  <widget name="semana4" position="1010,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
+  <widget name="semana5" position="1026,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
+  <widget name="semana6" position="1042,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
+  <widget name="semana7" position="1058,159" size="14,18" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un777777" halign="center" valign="top" transparent="1" foregroundColor="una0a0a0" zPosition="10" />
+  <widget name="fsemana1" position="962,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
+  <widget name="fsemana2" position="978,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
+  <widget name="fsemana3" position="994,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
+  <widget name="fsemana4" position="1010,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
+  <widget name="fsemana5" position="1026,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
+  <widget name="fsemana6" position="1042,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
+  <widget name="fsemana7" position="1058,161" size="14,16" font="Regular; 15" foregroundColors="#7a7a7a,#ffffff" backgroundColors="#b0b0b0,colorJR2" backgroundColor="un555555" halign="center" valign="top" transparent="0" foregroundColor="una0a0a0" zPosition="4" />
+  <eLabel name="" position="956,153" size="120,106" backgroundColor="white" zPosition="3" />
+  <eLabel name="" position="956,126" size="120,26" backgroundColor="colorJR2" zPosition="3" />
   </screen>
   <screen name="ServerEditor" position="center,center" size="560,310" title="FTP Server Editor">
     <ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" transparent="1" />
@@ -4138,4 +4138,104 @@ self.setTitle(_("Help"))
   </widget>
   <widget name="lab1" zPosition="2" position="67,597" size="732,40" font="Regular;22" halign="center" transparent="1" />
 </screen>
+  <screen name="spzForeWeatherPlugin" position="center,65" size="970,625" title="%s %s">
+			<widget name="lugar" position="36,3" zPosition="2" size="512,28" font="Regular;23" transparent="1" valign="center" backgroundColor="#ffffff" />
+			<widget name="info_entradas" position="753,3" zPosition="3" size="166,22" font="Regular; 16" transparent="1" halign="right" backgroundColor="#ffffff" />
+			<widget name="current_icon" position="7,46" zPosition="1" size="74,74" alphatest="blend" />
+			<widget name="temperatura" position="98,79" zPosition="3" size="98,30" font="Regular; 26" transparent="1" noWrap="1" halign="left" backgroundColor="#ffffff" />
+			<widget name="condicion" position="201,48" zPosition="1" size="270,225" font="Regular; 18" transparent="1" backgroundColor="#ffffff" valign="top" />
+			<widget name="viento" position="7,147" zPosition="1" size="191,65" font="Regular;17" transparent="1" backgroundColor="#ffffff" valign="top" />
+			<eLabel name="lin0" position="473,25" size="1,250" zPosition="1" backgroundColor="#05303030" />
+			<widget name="dia1" position="561,29" zPosition="1" size="400,25" halign="left" valign="center" font="Regular; 22" transparent="1" backgroundColor="#ffffff" />
+			<widget name="icono_dia1" position="479,29" zPosition="1" size="79,79" alphatest="blend" />
+			<widget name="info_dia1" position="561,53" zPosition="1" size="412,55" halign="left" valign="top" font="Regular; 17" transparent="1" backgroundColor="#ffffff" />
+			<widget name="dia2" position="561,112" zPosition="1" size="400,25" halign="left" valign="center" font="Regular; 22" transparent="1" backgroundColor="#ffffff" />
+			<widget name="icono_dia2" position="479,112" zPosition="1" size="79,79" alphatest="blend" />
+			<widget name="info_dia2" position="561,136" zPosition="1" size="412,55" halign="left" valign="top" font="Regular; 17" transparent="1" backgroundColor="#ffffff" />
+			<widget name="dia3" position="561,194" zPosition="1" size="400,25" halign="left" valign="center" font="Regular; 22" transparent="1" backgroundColor="#ffffff" />
+			<widget name="icono_dia3" position="479,194" zPosition="1" size="79,79" alphatest="blend" />
+			<widget name="info_dia3" position="561,218" zPosition="1" size="412,55" halign="left" valign="top" font="Regular; 17" transparent="1" backgroundColor="#ffffff" />
+			<widget name="statustext" position="0,23" zPosition="2" size="970,605" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="colorJR4" />
+			<widget name="ico_left" position="15,3" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/nm_left-fs8.png" alphatest="blend" zPosition="1" />
+			<widget name="ico_right" position="930,3" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/nm_right-fs8.png" alphatest="blend" zPosition="1" />
+			<widget name="ico_menu" position="750,355" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/menu.png" alphatest="blend" zPosition="1" />
+			<widget name="texto_menu" position="786,356" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+			<widget name="ico_l" position="750,413" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/izq-fs8.png" alphatest="blend" zPosition="1" />
+			<widget name="texto_l" position="786,414" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+			<widget name="ico_r" position="750,444" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/dch-fs8.png" alphatest="blend" zPosition="1" />
+			<widget name="texto_r" position="786,445" size="181,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+			<eLabel name="lin1" position="10,278" size="951,1" zPosition="1" backgroundColor="#05303030" />
+			<eLabel name="lin2" position="726,288" size="1,330" zPosition="1" backgroundColor="#05303030" />
+			<widget name="ico_blue" position="750,544" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/green.png" alphatest="blend" zPosition="1" />
+			<widget name="texto_blue" position="786,545" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+			<widget name="satelite" position="132,59" size="720,480" alphatest="blend" zPosition="10" transparent="1" />
+			<widget name="statustext2" position="0,3" zPosition="8" size="970,627" font="Regular;20" halign="center" valign="center" transparent="0" backgroundColor="colorJR4"/>
+			<widget name="barra" position="11,288" zPosition="2" size="702,330" alphatest="blend" />
+			<widget name="info_barra" position="62,308" zPosition="1" size="600,290" font="Regular;20" halign="center" valign="center" transparent="0" />
+			<ePixmap name="logofuente" position="10,213" size="107,63" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/icono1-fs8.png" transparent="1" alphatest="blend" />
+			<widget name="le_barra" position="132,542" zPosition="10" size="600,35" alphatest="blend" />
+			<widget name="ico_temp" position="59,46" zPosition="2" size="74,74" alphatest="blend" />
+			<widget name="fondo_detalle" position="0,31" size="948,594" alphatest="blend" zPosition="10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/fondolista-fs8.png"/>
+			<widget name="detallado" position="0,31" zPosition="8" size="970,594" scrollbarMode="showOnDemand" backgroundColor="colorJR4"/>
+			<widget name="ico_red" position="750,504" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spzWeather/image/red.png" alphatest="blend" zPosition="1" />
+			<widget name="texto_red" position="786,505" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+			<widget name="ico_vie" position="5,132" zPosition="2" size="29,40" alphatest="blend" />
+			<widget name="barrapix_arr" position="0,31" zPosition="9" size="970,594" alphatest="blend" transparent="1" />
+			<widget name="barrapix_abj" position="0,0" zPosition="9" size="20,20" alphatest="blend" transparent="1" />
+		</screen>
+	<screen name="descargasSPZ" position="center,70" size="1000,610" >
+		<widget name="textoinfo" position="8,125" size="970,450" valign="top" halign="left" text=" " font="Regular; 18" zPosition="2" transparent="1" />
+		<eLabel name="linea1" position="8,124" size="970,1" backgroundColor="#00555555" />
+		<eLabel name="linea2" position="8,576" size="970,1" backgroundColor="#00555555" />
+		<widget name="listaA" position="8,125" size="970,450" scrollbarMode="showOnDemand" zPosition="12" transparent="1" />
+		<widget name="img_fondo" position="8,125" size="970,450" alphatest="blend" zPosition="11" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/fondodes-fs8.png" />
+		<widget name="modo" position="8,0" size="970,30" backgroundColor="#ffffff" foregroundColor="#ffffff" text=" " font="Regular; 19" noWrap="1" valign="center"/>
+		<ePixmap name="new ePixmap" position="774,584" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/blue.png" alphatest="blend" transparent="1" />
+		<widget name="key_green" position="60,585" size="200,22" transparent="1" font="Regular; 16" />
+		<widget name="key_blue" position="808,585" size="362,22" transparent="1" text="News" font="Regular; 16" />
+		<widget name="img_red" position="176,584" zPosition="2" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/bred-fs8.png" transparent="1" alphatest="blend" />
+		<widget name="key_red" position="210,585" size="200,22" transparent="1" font="Regular; 16" />
+		<widget name="img_yellow" position="370,584" zPosition="2" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/yellow.png" transparent="1" alphatest="blend" />
+		<widget name="key_yellow" position="404,585" size="288,22" transparent="1" font="Regular; 16" />
+		<widget name="key_help" backgroundColor="#ffffff" position="8,42" size="542,70" transparent="1" font="Regular; 17" halign="left" zPosition="-10" valign="center" foregroundColor="#00999999" />
+		<ePixmap name="ds" position="555,35" size="423,84" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/bds-fs8.png" alphatest="blend" zPosition="-10" />
+		<widget name="key_mode" position="8,8" size="685,22" transparent="1" text=" " font="Regular; 15" halign="left" />
+		<widget name="img_green" position="26,581" zPosition="2" size="35,29" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/bgreen-fs8.png" transparent="1" alphatest="blend" />
+		<widget name="barrapix_arr" position="0,0" zPosition="19" size="20,20" alphatest="blend" transparent="1" />
+		<widget name="barrapix_abj" position="0,0" zPosition="19" size="20,20" alphatest="blend" transparent="1" />
+		<widget name="barrapix3_arr" position="8,125" zPosition="19" size="970,450" alphatest="blend" transparent="1" />
+		<widget name="barrapix3_abj" position="0,0" zPosition="19" size="20,20" alphatest="blend" transparent="1" />
+		<widget name="key_ok" position="404,585" size="288,22" transparent="1" font="Regular; 16" />
+		<ePixmap name="new ePixmap" position="570,584" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/menu.png" alphatest="blend" transparent="1" />
+		<widget name="key_options" position="605,585" size="288,22" transparent="1" font="Regular; 16" />
+		<widget name="img_ok" position="370,584" zPosition="2" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/bok-fs8.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="InfoArchivo" position="center,70" size="1170,610" >
+			<widget name="respuesta" position="5,39" size="537,542" zPosition="12" text=" " font="Regular; 19" transparent="1" backgroundColor="#ffffff"/>
+			<ePixmap name="new ePixmap" position="1,1" size="40,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/info-fs8.png" alphatest="blend" transparent="1" zPosition="10" />
+			<widget name="modo" position="0,4" size="1200,32" backgroundColor="#ffffff" foregroundColor="#000000" text=" " font="Regular; 22" />
+			<widget name="textodescarga" position="550,125" size="620,200" zPosition="13" halign="center" valign="center" transparent="0" font="Regular; 22" />
+			<widget name="key_red" position="226,588" size="200,22" transparent="1" font="Regular; 16" />
+			<widget name="key_green" position="36,588" size="200,22" transparent="1" font="Regular; 16" />
+			<widget name="key_yellow" position="441,588" size="258,22" transparent="1" font="Regular; 17" />
+			<widget name="imagen" position="550,125" size="620,348" zPosition="14" transparent="1" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/logospafs8.png" />
+			<widget name="key_mode" position="8,14" size="685,22" transparent="1" text=" " font="Regular; 15" halign="left" />
+			<widget name="barrapix_arr" position="0,39" zPosition="19" size="537,542" alphatest="blend" transparent="1" />
+			<widget name="barrapix_abj" position="0,0" zPosition="19" size="20,20" alphatest="blend" transparent="1" />	
+			<eLabel name="linea1" position="543,34" size="1,551" zPosition="50" backgroundColor="#03444444" />
+			<eLabel name="linea2" position="0,34" size="1200,1" zPosition="50" backgroundColor="#03444444" />
+			<eLabel name="linea3" position="0,584" size="1200,1" zPosition="50" backgroundColor="#03444444" />
+			<ePixmap name="new ePixmap" position="0,584" size="35,29" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/bgreen-fs8.png" alphatest="blend" />
+			<ePixmap name="new ePixmap" position="405,587" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/yellow.png" alphatest="blend" />
+			<widget name="key_ok" position="1043,588" size="258,22" transparent="1" font="Regular; 16" />
+			<ePixmap name="new ePixmap" position="970,587" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/bexit-fs8.png" alphatest="blend" />
+			<ePixmap name="new ePixmap" position="1005,587" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/bok-fs8.png" alphatest="blend" />
+			<ePixmap name="new ePixmap" position="550,44" size="23,23" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/spazeMenu/spzPlugins/descargasSPZ/img/vgreen-fs8.png" alphatest="blend" />
+			<widget name="key_pos" position="575,44" size="424,30" transparent="1"  font="Regular; 20" foregroundColor="#00aaaaaa" backgroundColor="#ffffff"/>
+			<eLabel name="linea4" position="543,112" size="620,1" zPosition="50" backgroundColor="#03444444" />
+			<widget name="key_totg" position="757,58" size="392,30" transparent="1" font="Regular; 20" foregroundColor="#0000ff00" backgroundColor="#ffffff" valign="center" halign="right" />
+			<widget name="key_totr" position="757,58" size="392,30" transparent="1" font="Regular; 20" foregroundColor="#00ff0000" backgroundColor="#ffffff" valign="center" halign="right" />
+			<widget name="linver" position="849,88" size="300,5" transparent="0" backgroundColor="#003dce3d" zPosition="51"/>
+			<widget name="linroj" position="849,88" size="300,5" transparent="0" backgroundColor="#676767" zPosition="50"/>
+		</screen>
 </skin>
