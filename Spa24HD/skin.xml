@@ -2347,10 +2347,9 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
     <panel name="BOTONES_SOURCE_RG" />
     <panel name="GRANDE" />
     <widget source="Title" render="Label" position="369,-1" size="540,46" font="Regular; 35" transparent="1" valign="top" zPosition="0" backgroundColor="colorJR10" />
-    <widget name="config" position="482,72" size="729,455" font="Regular;24" valign="center" transparent="0" halign="left" zPosition="3" itemHeight="30" />
-    <eLabel position="482,540" size="729,2" backgroundColor="grey" zPosition="1" />
+    <widget name="config" position="65,130" size="729,451" font="Regular;24" valign="center" transparent="1" halign="left" zPosition="3" itemHeight="30" backgroundColor="colorJR4"/>
     <ePixmap position="137,289" size="200,200" zPosition="2" pixmap="Spa24HD/cf/menu/main/setup.png" transparent="1" alphatest="blend" />
-    <widget source="help" render="Label" position="482,555" size="729,106" font="Regular;20" />
+    <widget source="help" render="Label" position="65,594" size="729,56" font="Regular;20" />
   </screen>
   <screen name="EMCImdbScan" position="center,center" size="1280,720" title="EMC Cover search" backgroundColor="transparent">
     <panel name="ARRIBA" />
@@ -4238,4 +4237,35 @@ self.setTitle(_("Help"))
 			<widget name="linver" position="849,88" size="300,5" transparent="0" backgroundColor="#003dce3d" zPosition="51"/>
 			<widget name="linroj" position="849,88" size="300,5" transparent="0" backgroundColor="#676767" zPosition="50"/>
 		</screen>
+	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="ARRIBA" />
+		<panel name="GRANDE" />
+		<panel name="BOTONES_SOURCE_R" />
+		<widget font="Regular;19" itemHeight="26" name="menulist" position="70,132" size="741,306" scrollbarMode="showOnDemand" backgroundColor="colorJR4" zPosition="10" />
+		<widget backgroundColor="#ffffff" font="Regular;19" halign="center" position="70,570" render="Label" size="741,66" source="introduction" transparent="1" valign="center" />
+	</screen>
+  <screen name="MPSetup" position="center,center" size="900,655" backgroundColor="#00060606" flags="wfNoBorder">
+	<eLabel position="0,0" size="900,60" backgroundColor="#00242424" />
+	<widget name="title" position="30,10" size="500,55" foregroundColor="white" backgroundColor="#18101214" transparent="1" zPosition="1" font="mediaportal;24" valign="center" halign="left" />
+	<widget source="global.CurrentTime" render="Label" position="700,00" size="150,55" foregroundColor="white" backgroundColor="#18101214" transparent="1" zPosition="1" font="mediaportal;24" valign="center" halign="right">
+		<convert type="ClockToText">Format:%-H:%M</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="450,20" size="400,55" foregroundColor="white" backgroundColor="#18101214" transparent="1" zPosition="1" font="mediaportal;16" valign="center" halign="right">
+		<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+	</widget>
+	<widget name="config" position="0,60" size="900,350" foregroundColor="white" backgroundColor="#00101214" scrollbarMode="showOnDemand" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins_720/original/images/sel.png" foregroundColorSelected="#00e5b243" transparent="0" />
+	<eLabel position="215,460" size="675,2" backgroundColor="#00555556" />
+    <ePixmap pixmap="~/original/images/buttonred.png" position="20,635" size="100,2" alphatest="blend" />
+    <ePixmap pixmap="~/original/images/buttongreen.png" position="225,635" size="100,2" alphatest="blend" />
+    <ePixmap pixmap="~/original/images/buttonyellow.png" position="430,635" size="100,2" alphatest="blend" />
+    <ePixmap pixmap="~/original/images/buttonblue.png" position="635,635" size="100,2" alphatest="blend" />
+    <ePixmap pixmap="~/original/images/buttonred.png" position="120,635" size="100,2" alphatest="blend" />
+    <ePixmap pixmap="~/original/images/buttongreen.png" position="325,635" size="100,2" alphatest="blend" />
+    <ePixmap pixmap="~/original/images/buttonyellow.png" position="530,635" size="100,2" alphatest="blend" />
+    <ePixmap pixmap="~/original/images/buttonblue.png" position="735,635" size="100,2" alphatest="blend" />
+    <widget name="F1" position="20,610" size="200,30" transparent="1" font="mediaportal; 17" foregroundColor="white" backgroundColor="#00101214" valign="center" halign="center" zPosition="1" />
+    <widget name="F2" position="225,610" size="200,30" transparent="1" font="mediaportal; 17" foregroundColor="white" backgroundColor="#00101214" valign="center" halign="center" zPosition="1" />
+    <widget name="F3" position="430,610" size="200,30" transparent="1" font="mediaportal; 17" foregroundColor="white" backgroundColor="#00101214" valign="center" halign="center" zPosition="1" />
+    <widget name="F4" position="635,610" size="200,30" transparent="1" font="mediaportal; 17" foregroundColor="white" backgroundColor="#00101214" valign="center" halign="center" zPosition="1" />
+  </screen>
 </skin>
