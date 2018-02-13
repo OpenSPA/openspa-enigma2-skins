@@ -485,7 +485,7 @@
     <widget source="ServiceEvent" render="Progress" position="866,293" size="300,4" borderWidth="0" backgroundColor="selection-background" pixmap="MetrixJRSD/colors/00ffffff.png" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=5,always=0,startdelay=3000,wrap" position="800,123" size="445,160" font="Regular; 18" backgroundColor="colorJR10" transparent="1" valign="top">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=5,always=0,startdelay=3000,wrap" position="800,123" size="445,160" font="Regular; 18" foregroundColor="white" backgroundColor="colorJR10" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="icanal" position="23,626" size="755,26" font="Regular; 15" halign="center" foregroundColor="grey" transparent="1" zPosition="8" backgroundColor="colorJR4" valign="center" />
