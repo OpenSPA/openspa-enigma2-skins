@@ -429,7 +429,7 @@
     <panel name="ARRIBA" />
     <eLabel position="245,91" zPosition="-11" size="412,565" backgroundColor="colorJR4" foregroundColor="colorJR3" />
     <widget source="title" render="Label" position="36,25" size="511,36" font="Regular; 28" transparent="1" valign="center" zPosition="2" backgroundColor="colorJR15" halign="center" foregroundColor="white" />
-    <widget source="menu" render="Listbox" position="155,102" size="502,549" foregroundColor="black" backgroundColor="white" backgroundColorSelected="colorJR17" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="1">
+    <widget source="menu" render="Listbox" position="155,102" size="512,549" foregroundColor="black" backgroundColor="white" backgroundColorSelected="colorJR17" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 10), size = (490, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 26)],
@@ -444,7 +444,7 @@
     <eLabel name="" position="724,101" size="308,137" backgroundColor="colorJR19" />
     <ePixmap name="" position="728,96" size="300,137" zPosition="3" pixmap="Spa24HD/openspa.png" alphatest="blend" />
     <ePixmap name="" position="0, 0" size="1280,720" zPosition="-5" pixmap="Spa24HD/cf/fondo5.png" />
-    <eLabel name="" position="154,91" size="502,569" backgroundColor="colorJR4" />
+    <eLabel name="" position="154,91" size="512,569" backgroundColor="colorJR4" />
     <eLabel name="" position="728,96" size="300,137" zPosition="2" backgroundColor="colorJR11" />
   </screen>
   <!-- SCREENS -->
@@ -1578,7 +1578,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (15, 0), size = (48, 48), png = 0),
-					MultiContentEntryText(pos = (75, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (75, 10), size = (500, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 					MultiContentEntryText(pos = (640, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 					],
 					"fonts": [gFont("Regular", 22)],
@@ -1595,7 +1595,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (15, 0), size = (48, 48), png = 0),
-					MultiContentEntryText(pos = (75, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (75, 10), size = (500, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 					MultiContentEntryText(pos = (640, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 					],
 					"fonts": [gFont("Regular", 22)],
@@ -2573,11 +2573,15 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
     <ePixmap name="" position="1187,680" size="200,40" pixmap="Spa24HD/cf/general/button-back-light.png" zPosition="-1" alphatest="blend" />
     <!--Button */-->
   </screen>
+  <screen name="RemoteControlCode" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+   <panel name="ARRIBA" />
+   <panel name="PANEL_CONFSETUP" />
+  </screen>
   <screen name="AnimationSetupScreen" title="Animations Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ARRIBA" />
     <panel name="GRANDE" />
     <panel name="BOTONES_SOURCE_RGYB" />
-    <widget name="list" position="62,127" size="756,516" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="colorJR3" transparent="1" />
+    <widget name="list" position="62,127" size="756,516" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="colorJR4" transparent="1" />
   </screen>
   <screen name="AnimationSetupConfig" title="Animations Speed" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ARRIBA" />
@@ -2661,7 +2665,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
     <widget name="titulodummy" position="-4,0" size="0,40" zPosition="12" backgroundColor="transparent" alphatest="blend" transparent="1" />
     <widget name="arriba" position="0,0" size="390,2" zPosition="12" backgroundColor="black" transparent="0" />
     <widget name="izquierda" position="0,0" size="2,100" zPosition="12" backgroundColor="black" transparent="0" />
-    <widget name="lista" position="0,0" size="384,96" foregroundColor="white" backgroundColorSelected="colorJR15" font="Regular; 22" valign="bottom" scrollbarMode="showOnDemand" zPosition="10" transparent="0" backgroundColor="colorJR10" />
+    <widget name="lista" position="0,0" size="384,96" foregroundColor="white" backgroundColorSelected="colorJR15" font="Regular; 22" valign="bottom" scrollbarMode="showOnDemand" zPosition="10" transparent="0" backgroundColor="dark" />
     <widget name="derecha" position="0,100" size="2,100" zPosition="12" backgroundColor="black" transparent="0" />
     <widget name="abajo" position="0,400" size="100,2" zPosition="12" backgroundColor="black" transparent="1" />
     <widget name="fondo" position="0,0" size="390,100" zPosition="1" />
