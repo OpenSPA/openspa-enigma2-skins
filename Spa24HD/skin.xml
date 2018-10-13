@@ -237,7 +237,6 @@
     <eLabel name="" position="624,87" size="308,137" backgroundColor="colorJR19" />
     <ePixmap name="" position="628,82" size="300,137" zPosition="3" pixmap="Spa24HD/openspa.png" alphatest="blend" />
     <ePixmap name="" position="0, 0" size="1280,720" zPosition="-5" pixmap="Spa24HD/cf/fondo5.png" />
-    <ePixmap name="" position="0, 0" size="1280,720" zPosition="-5" pixmap="Spa24HD/cf/fondo5.png" />
     <eLabel name="" position="628,82" size="300,137" zPosition="2" backgroundColor="colorJR11" />
   </screen>
   <screen name="BOTONES_RGYB">
@@ -4243,10 +4242,10 @@ self.setTitle(_("Help"))
 		</screen>
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="ARRIBA" />
-		<panel name="GRANDE" />
+		<panel name="PEQUENO" />
 		<panel name="BOTONES_SOURCE_R" />
-		<widget font="Regular;19" itemHeight="26" name="menulist" position="70,132" size="741,306" scrollbarMode="showOnDemand" backgroundColor="colorJR4" zPosition="10" />
-		<widget backgroundColor="#ffffff" font="Regular;19" halign="center" position="70,570" render="Label" size="741,66" source="introduction" transparent="1" valign="center" />
+		<widget font="Regular;23" itemHeight="36" name="menulist" position="100,102" size="400,306" scrollbarMode="showOnDemand" backgroundColor="colorJR4" zPosition="10" />
+		<widget backgroundColor="#ffffff" font="Regular;19" halign="center" position="100,570" render="Label" size="400,66" source="introduction" transparent="1" valign="center" />
 	</screen>
   <screen name="MPSetup" position="center,center" size="900,655" backgroundColor="#00060606" flags="wfNoBorder">
 	<eLabel position="0,0" size="900,60" backgroundColor="#00242424" />
