@@ -1241,9 +1241,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ARRIBA" />
     <panel name="BOTONES_SOURCE_RGYB" />
     <panel name="GRANDE" />
-    <widget name="config" zPosition="2" position="70,132" size="741,406" scrollbarMode="showOnDemand" transparent="1" />
-    <widget source="current_address" render="Label" position="71,548" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="white" />
-    <widget source="fixed_address" render="Label" position="70,597" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="white" />
+    <widget name="config" zPosition="2" position="70,132" size="741,376" scrollbarMode="showOnDemand" transparent="1" />
+	<widget name="description" position="70,520" size="720,80" font="Regular;16" halign="center" valign="center" backgroundColor="colorJR4" transparent="0" zPosition="12" foregroundColor="colorJR2"/>
+    <widget source="current_address" render="Label" position="71,600" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="white" />
+    <widget source="fixed_address" render="Label" position="70,625" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="white" />
   </screen>
   <screen name="OpenWebifConfig" position="0,0" size="1280,721" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ARRIBA" />
