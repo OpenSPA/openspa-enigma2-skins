@@ -4272,4 +4272,23 @@ self.setTitle(_("Help"))
     <widget name="F3" position="430,610" size="200,30" transparent="1" font="mediaportal; 17" foregroundColor="white" backgroundColor="#00101214" valign="center" halign="center" zPosition="1" />
     <widget name="F4" position="635,610" size="200,30" transparent="1" font="mediaportal; 17" foregroundColor="white" backgroundColor="#00101214" valign="center" halign="center" zPosition="1" />
   </screen>
+  <screen name="HistoryZapSelector" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+      <panel name="ARRIBA" />
+      <panel name="GRANDE" />
+      <widget source="menu" render="Listbox" position="56,121" size="769,550" backgroundColorSelected="colorJR2" foregroundColor="black" backgroundColor="colorJR4" transparent="1" scrollbarMode="showOnDemand">
+            <convert type="TemplatedMultiContent">
+                {"template": [
+                        MultiContentEntryText(pos = (95, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+                        MultiContentEntryText(pos = (115, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00000000, color_sel = 0x00ffffff),
+                        MultiContentEntryText(pos = (115, 20), size = (645, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x00ffffff),
+                        MultiContentEntryText(pos = (115, 40), size = (180, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00000000, color_sel = 0x00ffffff),
+                        MultiContentEntryText(pos = (8, 60), size = (755, 75), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00000000, color_sel = 0x00ffffff),
+                        MultiContentEntryPixmapAlphaBlend(pos=(5, 5), size=(83, 50), png=6, flags = BT_SCALE)
+                ],
+                 "fonts": [gFont("Regular", 20), gFont("Regular", 18), gFont("Regular", 15), gFont("Regular", 13)],
+                 "itemHeight": 137
+                }
+            </convert>
+        </widget>
+    </screen>
 </skin>
