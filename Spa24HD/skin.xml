@@ -911,43 +911,77 @@
     <widget name="WarningPixmap" pixmap="Spa24HD/cf/message/warning.png" position="5,5" size="53,53" alphatest="blend" />
     <widget name="list" position="100,100" size="480,375" backgroundColor="white" foregroundColor="black" />
     <applet type="onLayoutFinish">
-# this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
-
-orgwidth = self.instance.size().width()
-orgheight = self.instance.size().height()
-orgpos = self.instance.position()
+from enigma import eSize,ePoint, getDesktop
+offset_listposx = 10
+offset_listposy = 60
+offset_listwidth = 10
+offset_listheight = 30
+offset_textwidth = 170
+offset_textheight = 20
+min_width = 400
+min_height = 50
+#----
+deskwidth = getDesktop(0).size().width()
+deskheight = getDesktop(0).size().height()
 textsize = self["text"].getSize()
-lenlist = len(self.list)*25
-if (lenlist &gt; 125):
-	lenlist = 125
+textwidth = textsize[0] + offset_textwidth
+textheight = textsize[1] + offset_textheight
 
-# y size still must be fixed in font stuff...
-textsize = (textsize[0] + 50, textsize[1] + 50)
-offset = 0
-if self.type == self.TYPE_YESNO:
-	offset = lenlist+10
-wsizex = textsize[0] + 60
-wsizey = textsize[1] + offset
-if (280 &gt; wsizex):
-	wsizex = 280
-wsize = (wsizex, wsizey)
+listwidth = 0
+listheight = 0
 
+if self.list:
+	try:
+		for i in self.list:
+			if len(i[0]) > listwidth:
+				listwidth = len(i[0])
+		listwidth = listwidth * offset_listwidth
+		listheight = len(self.list) * offset_listheight
+	except:
+		pass
+
+if (min_height &gt; textheight):
+	textheight = min_height
+if (min_width &gt; textwidth):
+	textwidth = min_width
+if (listheight &gt; 0):
+	offset = 21
+else:
+	offset = 13
+if (textwidth &gt; listwidth):
+	wsizex = textwidth + offset_listposx * 2
+else:
+	textwidth = listwidth - offset_listposx
+	wsizex = listwidth + offset_listposx
+
+wsizey = textheight + listheight + offset
+
+if ((wsizey + offset_listposy - offset_listposx) &gt; deskheight):
+	textheight = deskheight - listheight - offset - offset_listposy + offset_listposx
+	wsizey = textheight + listheight + offset
+
+if (wsizex &gt; deskwidth):
+	textwidth = deskwidth - offset_listposx * 2
+	listwidth = wsizex = deskwidth
+
+wsize = (wsizex,wsizey + offset_listposy - offset_listposx)
 
 # resize
 self.instance.resize(eSize(*wsize))
 
 # resize label
+textsize = (textwidth,textheight)
 self["text"].instance.resize(eSize(*textsize))
 
 # move list
-listsize = (wsizex, lenlist)
-self["list"].instance.move(ePoint(0, textsize[1]))
+listsize = (wsizex - offset_listposx * 2,listheight)
+self["list"].instance.move(ePoint(offset_listposx,textheight + offset_listposy))
 self["list"].instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
+newheight = wsize[1]
+self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
 		</applet>
   </screen>
   <screen name="MessageBox" position="center,center" size="600,10" title="Message">
@@ -1603,12 +1637,11 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			</convert>
     </widget>
   </screen>
-  <screen name="FlashOnline" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <screen name="FlashOnline" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
     <panel name="ARRIBA" />
     <panel name="MEDIO" />
-    <panel name="BOTONES_RGY" />
-    <widget name="info-online" position="98,93" zPosition="1" size="534,233" font="Regular; 22" halign="left" valign="top" backgroundColor="white" foregroundColor="black" transparent="1" />
-    <widget name="info-local" position="98,332" zPosition="1" size="534,300" font="Regular; 22" halign="left" valign="top" backgroundColor="white" foregroundColor="black" transparent="1" />
+    <panel name="BOTONES_SOURCE_RGY" />
+    <widget name="list" position="98,99" zPosition="1" size="534,533" itemHeight="32" font="Regular; 22" halign="left" valign="top" backgroundColor="white" foregroundColor="black" transparent="1" />
   </screen>
   <screen name="doFlashImage" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
     <panel name="ARRIBA" />
