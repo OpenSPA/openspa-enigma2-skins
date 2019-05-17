@@ -912,8 +912,8 @@
     <widget name="list" position="100,100" size="480,375" backgroundColor="white" foregroundColor="black" />
     <applet type="onLayoutFinish">
 from enigma import eSize,ePoint, getDesktop
-offset_listposx = 10
-offset_listposy = 60
+offset_listposx = 35
+offset_listposy = 25
 offset_listwidth = 10
 offset_listheight = 30
 offset_textwidth = 170
@@ -933,7 +933,7 @@ listheight = 0
 if self.list:
 	try:
 		for i in self.list:
-			if len(i[0]) > listwidth:
+			if len(i[0]) &gt; listwidth:
 				listwidth = len(i[0])
 		listwidth = listwidth * offset_listwidth
 		listheight = len(self.list) * offset_listheight
@@ -945,7 +945,7 @@ if (min_height &gt; textheight):
 if (min_width &gt; textwidth):
 	textwidth = min_width
 if (listheight &gt; 0):
-	offset = 21
+	offset = 38
 else:
 	offset = 13
 if (textwidth &gt; listwidth):
