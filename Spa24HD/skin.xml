@@ -3443,8 +3443,8 @@ self.setTitle(_("Help"))
     <panel name="BOTONES_RGYB" />
     <widget name="menu" font="Regular;18" position="58,126" scrollbarMode="showOnDemand" size="765,383" transparent="1" />
     <widget name="texto" position="62,575" size="753,60" font="Regular;22" valign="center" transparent="1" halign="center" backgroundColor="colorJR4" />
-    <widget name="space" position="62,518" size="753,30" halign="center" font="Regular;20" transparent="1" foregroundColor="green" backgroundColor="colorJR4" />
-    <widget name="progreso" position="62,554" size="753,12" borderWidth="1" zPosition="3" foregroundColor="green" />
+    <widget name="space" position="62,518" size="753,30" halign="center" font="Regular;20" transparent="1" foregroundColor="red" backgroundColor="colorJR4" />
+    <widget name="progreso" position="62,554" size="753,12" borderWidth="1" zPosition="3" foregroundColor="red" />
   </screen>
   <screen name="spzCopiar" position="0,0" size="1280,720" title="openSPA Backup" zPosition="11" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="ARRIBA" />
