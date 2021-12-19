@@ -2764,7 +2764,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
     <widget name="titulodummy" position="-4,0" size="0,40" zPosition="12" backgroundColor="transparent" alphatest="blend" transparent="1" />
     <widget name="arriba" position="0,0" size="390,2" zPosition="12" backgroundColor="black" transparent="0" />
     <widget name="izquierda" position="0,0" size="2,100" zPosition="12" backgroundColor="black" transparent="0" />
-    <widget name="lista" position="0,0" size="384,96" foregroundColor="white" backgroundColorSelected="colorJR15" font="Regular; 22" valign="bottom" scrollbarMode="showOnDemand" zPosition="10" transparent="0" backgroundColor="colorJR10" />
+    <widget name="lista" position="0,0" size="384,96" foregroundColor="red" backgroundColorSelected="colorJR15" font="Regular; 22" valign="bottom" scrollbarMode="showOnDemand" zPosition="10" transparent="0" backgroundColor="colorJR10" />
     <widget name="derecha" position="0,100" size="2,100" zPosition="12" backgroundColor="black" transparent="0" />
     <widget name="abajo" position="0,400" size="100,2" zPosition="12" backgroundColor="black" transparent="1" />
     <widget name="fondo" position="0,0" size="390,100" zPosition="1" />
@@ -3567,8 +3567,8 @@ self.setTitle(_("Help"))
   <screen name="gesPlugins" position="0,0" size="1280,720" backgroundColor="transparent" title="Plugins administrator openSPA">
     <panel name="ARRIBA" />
     <panel name="GRANDE" />
-    <widget name="lista" position="59,160" size="764,480" scrollbarMode="showOnDemand" zPosition="12" transparent="1" />
-    <widget name="modo" position="58,125" size="764,522" backgroundColor="white" foregroundColor="white" text=" " font="Regular; 21" halign="left" valign="top" zPosition="13" transparent="1" />
+    <widget name="lista" position="59,160" size="764,480" backgroundColor="white" foregroundColor="black" scrollbarMode="showOnDemand" zPosition="12" transparent="1" />
+    <widget name="modo" position="58,125" size="764,522" backgroundColor="white" foregroundColor="black" text=" " font="Regular; 21" halign="left" valign="top" zPosition="13" transparent="0" />
     <eLabel name="linea" position="465,618" size="764,0" backgroundColor="darkgrey" />
     <widget name="key_help" position="921,256" backgroundColor="black" size="162,24" transparent="1" font="Regular; 20" halign="left" zPosition="14" valign="center" />
     <widget name="key_mode" position="558,27" size="712,30" transparent="1" text=" " font="Regular; 14" halign="center" backgroundColor="colorJR4" foregroundColor="black" valign="center" noWrap="1" />
